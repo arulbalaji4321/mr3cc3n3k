@@ -12,6 +12,7 @@ import java.time.Duration;
 
 public class BasePage{
 
+
      //driver factory  (second branch)
      WebDriver driver=DriverFactory.getdriver();
 
