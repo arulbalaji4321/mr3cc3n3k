@@ -28,7 +28,7 @@ public class BasePage{
     public void jClick(WebElement element) throws InterruptedException {
         Thread.sleep(10000);
         if(element.isDisplayed()) {
-            JavascriptExecutor javascriptExecutor = (JavascriptExecutor) DriverFactory.getdriver();
+            JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
             javascriptExecutor.executeScript("arguments[0].click();", element);
             System.out.println("clicked : " + element);
 
