@@ -12,7 +12,8 @@ import java.time.Duration;
 
 public class BasePage{
 
-    WebDriver driver=DriverFactory.getdriver();
+     //driver factory  (second branch)
+     WebDriver driver=DriverFactory.getdriver();
 
     public void jClick(WebElement element) throws InterruptedException {
         Thread.sleep(10000);
