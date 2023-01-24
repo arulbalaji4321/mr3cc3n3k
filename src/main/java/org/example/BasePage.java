@@ -11,9 +11,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class BasePage{
+    
 
-    //drivers
-    WebDriver driver=DriverFactory.getdriver();
+     //driver factory  (second branch)
+     WebDriver driver=DriverFactory.getdriver();
 
     public void jClick(WebElement element) throws InterruptedException {
         Thread.sleep(10000);

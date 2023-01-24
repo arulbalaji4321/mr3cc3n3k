@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory{
+    //comment
     public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<>();
     public WebDriver driver_init(String browser){
         if (browser.equalsIgnoreCase("firefox")){
