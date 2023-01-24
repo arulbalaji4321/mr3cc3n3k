@@ -5,8 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.example.DriverFactory;
+
 
 import java.time.Duration;
 
@@ -14,8 +17,13 @@ public class BasePage{
 
 
      //DriverFactory from (second branch)
-     WebDriver driver=DriverFactory.getdriver();
+     WebDriver driver;
      //comment1 from (main)
+
+    public BasePage(){
+        this.driver = DriverFactory.getdriver();
+        PageFactory.initElements(this.driver,this);
+    }
 
     public void jClick(WebElement element) throws InterruptedException {
         Thread.sleep(10000);
