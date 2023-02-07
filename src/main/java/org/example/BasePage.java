@@ -21,7 +21,11 @@ public class BasePage{
      WebDriver driver;
 
 
+
+
     public BasePage(){
+
+        //driver initiation using driver factory
         this.driver = DriverFactory.getdriver();
         PageFactory.initElements(this.driver,this);
     }
