@@ -16,9 +16,9 @@ import java.time.Duration;
 public class BasePage{
 
 
-     //DriverFactory from (second branch)
+     // in main branch
      WebDriver driver;
-     //comment1 from (main)
+
 
     public BasePage(){
         this.driver = DriverFactory.getdriver();
